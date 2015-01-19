@@ -23,3 +23,7 @@
 [submodule "vim/bundle/vim-slim"]
 	path = vim/bundle/vim-slim
 	url = https://github.com/slim-template/vim-slim.git
+[submodule "vim/bundle/vim-tags"]
+	path = vim/bundle/vim-tags
+	url = https://github.com/szw/vim-tags.git
+    ignore = dirty
