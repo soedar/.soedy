@@ -27,3 +27,6 @@
 	path = vim/bundle/vim-tags
 	url = https://github.com/szw/vim-tags.git
     ignore = dirty
+[submodule "vim/bundle/tmuxline.vim"]
+	path = vim/bundle/tmuxline.vim
+	url = https://github.com/edkolev/tmuxline.vim.git
