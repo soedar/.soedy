@@ -1,4 +1,4 @@
-colorscheme kolor
+colorscheme Tomorrow-Night
 
 " Split shortcut
 nnoremap <leader>l <C-W><C-L>
