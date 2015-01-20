@@ -22,7 +22,7 @@ brew cask install slack
 brew cask install virtualbox
 brew cask install dropbox
 brew cask install gimp
-brew cask install remote-desktop-connection
+brew cask install google-hangouts
 
 # Others
 source _brew_acad.sh
