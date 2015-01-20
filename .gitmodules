@@ -30,3 +30,6 @@
 [submodule "vim/bundle/tmuxline.vim"]
 	path = vim/bundle/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "vim/bundle/vim-tomorrow-theme"]
+    path = vim/bundle/vim-tomorrow-theme
+    url = https://github.com/chriskempson/vim-tomorrow-theme.git
