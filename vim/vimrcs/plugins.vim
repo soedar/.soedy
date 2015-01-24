@@ -6,6 +6,7 @@ let g:ctrlp_user_command = 'ag %s -i --follow --nocolor --nogroup --hidden --ign
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 nnoremap <leader>, :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
 "nnoremap <leader>pm :CtrlPMRU<CR>
 
 " Fugitive
