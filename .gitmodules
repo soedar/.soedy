@@ -36,3 +36,6 @@
 [submodule "zsh/prezto"]
 	path = zsh/prezto
 	url = git@github.com:soedar/prezto.git
+[submodule "vimperator/colors"]
+	path = vimperator/colors
+	url = git@github.com:vimpr/vimperator-colors.git
