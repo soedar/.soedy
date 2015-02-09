@@ -58,3 +58,9 @@ au FileType coffee call CoffeeScriptFold()
 " => Ruby section
 """""""""""""""""""""""""""""""
 au FileType ruby setl sw=2 sts=2
+
+""""""""""""""""""""""""""""""
+" => CSS/Scss section
+"""""""""""""""""""""""""""""""
+au FileType css setl sw=2 sts=2
+au FileType scss setl sw=2 sts=2
