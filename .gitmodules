@@ -28,14 +28,14 @@
 	path = vim/bundle/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim.git
 [submodule "vim/bundle/vim-tomorrow-theme"]
-    path = vim/bundle/vim-tomorrow-theme
-    url = https://github.com/chriskempson/vim-tomorrow-theme.git
+	path = vim/bundle/vim-tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
 [submodule "zsh/prezto"]
 	path = zsh/prezto
-	url = git@github.com:soedar/prezto.git
+	url = https://github.com/soedar/prezto.git
 [submodule "vimperator/colors"]
 	path = vimperator/colors
-	url = git@github.com:vimpr/vimperator-colors.git
+	url = https://github.com/vimpr/vimperator-colors.git
 [submodule "vim/bundle/vim-bundler"]
 	path = vim/bundle/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
+	url = https://github.com/tpope/vim-bundler.git
