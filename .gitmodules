@@ -20,10 +20,6 @@
 [submodule "vim/bundle/vim-slim"]
 	path = vim/bundle/vim-slim
 	url = https://github.com/slim-template/vim-slim.git
-[submodule "vim/bundle/vim-tags"]
-	path = vim/bundle/vim-tags
-	url = https://github.com/szw/vim-tags.git
-	ignore = dirty
 [submodule "vim/bundle/tmuxline.vim"]
 	path = vim/bundle/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim.git
@@ -41,4 +37,10 @@
 	url = https://github.com/tpope/vim-bundler.git
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/vim-easytags"]
+	path = vim/bundle/vim-easytags
+	url = git@github.com:xolox/vim-easytags.git
+[submodule "vim/bundle/vim-misc"]
+	path = vim/bundle/vim-misc
+	url = git@github.com:xolox/vim-misc.git

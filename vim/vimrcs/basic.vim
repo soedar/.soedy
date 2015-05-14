@@ -297,7 +297,7 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 "    requires ack.vim - it's much better than vimgrep/grep
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " When you press gv you Ack after the selected text
-vnoremap <silent> gf :call VisualSelection('gf', '')<CR>
+vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
 
 " Open Ack and put the cursor in the right position
 map <leader>f :Ag
@@ -355,7 +355,8 @@ function! VisualSelection(direction, extra_filter) range
     if a:direction == 'b'
         execute "normal ?" . l:pattern . "^M"
     elseif a:direction == 'gv'
-        call CmdLine("Ag \"" . l:pattern . "\" " ) elseif a:direction == 'replace'
+        call CmdLine("Ag \"" . l:pattern . "\" " ) 
+    elseif a:direction == 'replace'
         call CmdLine("%s" . '/'. l:pattern . '/')
     elseif a:direction == 'f'
         execute "normal /" . l:pattern . "^M"
