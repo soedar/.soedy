@@ -40,13 +40,13 @@
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/vim-easytags"]
 	path = vim/bundle/vim-easytags
-	url = git@github.com:xolox/vim-easytags.git
+	url = https://github.com/xolox/vim-easytags.git
 [submodule "vim/bundle/vim-misc"]
 	path = vim/bundle/vim-misc
-	url = git@github.com:xolox/vim-misc.git
+	url = https://github.com/xolox/vim-misc.git
 [submodule "vim/bundle/csv.vim"]
 	path = vim/bundle/csv.vim
-	url = git@github.com:chrisbra/csv.vim.git
+	url = https://github.com/chrisbra/csv.vim.git
 [submodule "vim/bundle/rust.vim"]
 	path = vim/bundle/rust.vim
-	url = git@github.com:rust-lang/rust.vim.git
+	url = https://github.com/rust-lang/rust.vim.git
