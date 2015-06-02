@@ -13,3 +13,6 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>gi :Git 
 nnoremap <leader>gst :Gstatus<CR>
 nnoremap <leader>gc :Gcommit<CR>
+
+" Easytags vim async
+let g:easytags_async = 1
