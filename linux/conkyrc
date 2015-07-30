@@ -40,7 +40,7 @@ ${color white}${battery_bar BAT0}${color}
 
 # CPU
 ${font Open Sans:Bold:size=10}${color white}CPU ${hr 2}
-$color${font}Intel i5-3230M $alignr ${freq_g cpu0}GHz
+$color${font}${execi 1000 cat /proc/cpuinfo | grep 'model name' | sed -e 's/model name.*: //'| uniq | cut -c 1-26} $alignr ${freq_g cpu0}GHz
 ${font}Core 0 ${alignr}${execi 30 sensors | grep 'Core 0:' | cut -c18-19}${iconv_start UTF-8 ISO_8859-1} °${iconv_stop}C
 ${font}Core 1 ${alignr}${execi 30 sensors | grep 'Core 1:' | cut -c18-19}${iconv_start UTF-8 ISO_8859-1} °${iconv_stop}C
 ${font}Fan ${alignr}${execi 30 sensors | grep RPM | cut -c15-22}
