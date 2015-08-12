@@ -28,3 +28,5 @@ set clipboard=unnamed
 
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
+
+let g:neocomplete#enable_at_startup = 1
