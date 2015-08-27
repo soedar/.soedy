@@ -10,6 +10,11 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 "nnoremap <leader>pm :CtrlPMRU<CR>
 
 " Fugitive
-nnoremap <leader>gi :Git 
+nnoremap <leader>g :Git 
 nnoremap <leader>gst :Gstatus<CR>
 nnoremap <leader>gc :Gcommit<CR>
+
+" Golang
+au FileType go nmap <leader>gb <Plug>(go-install)
+
+let g:go_auto_type_info = 1
