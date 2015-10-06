@@ -18,3 +18,4 @@ nnoremap <leader>gc :Gcommit<CR>
 au FileType go nmap <leader>gb <Plug>(go-install)
 
 let g:go_auto_type_info = 1
+let g:go_fmt_command = "goimports"

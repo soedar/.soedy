@@ -11,3 +11,8 @@ source tmux/setup.sh
 
 # vimperator
 source vimperator/setup.sh
+
+# i3
+source i3/setup.sh
+
+ln -s ~/.soedy/Xdefaults ~/.Xdefaults
