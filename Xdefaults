@@ -3,6 +3,9 @@ URxvt*boldFont:xft:Dejavu Sans Mono for Powerline:pixelsize=12:style=bold
 URxvt.scrollBar: false
 URxvt.saveLines: 30000
 
+URxvt.keysym.Control-k: command:\033]720;1\007
+URxvt.keysym.Control-j: command:\033]721;1\007
+
 !TomorrowNightEighties
 *.foreground:   #cccccc
 *.background:   #2d2d2d
