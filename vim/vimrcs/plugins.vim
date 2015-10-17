@@ -14,6 +14,9 @@ nnoremap <leader>g :Git
 nnoremap <leader>gst :Gstatus<CR>
 nnoremap <leader>gc :Gcommit<CR>
 
+" Silversearcher
+nnoremap <leader>f :Ag 
+
 " Golang
 au FileType go nmap <leader>gb <Plug>(go-install)
 

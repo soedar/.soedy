@@ -4,7 +4,7 @@ set runtimepath+=~/.vim
 execute pathogen#infect()
 execute pathogen#helptags()
 
-source ~/.vim/vimrcs/basic.vim
+" source ~/.vim/vimrcs/basic.vim
+source ~/.vim/vimrcs/soedy.vim
 source ~/.vim/vimrcs/filetypes.vim
 source ~/.vim/vimrcs/plugins.vim
-source ~/.vim/vimrcs/soedy.vim
