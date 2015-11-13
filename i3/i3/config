@@ -170,10 +170,25 @@ bar {
         status_command i3status
         tray_output eDP1
         position top
+        separator_symbol "〉"
+
+        colors {
+                separator #586e75 
+                background #2d2d2d
+                statusline #c7c7c7
+                focused_workspace  #586e75 #586e75 #ffffff
+                active_workspace #2d2d2d #2d2d2d #ffffff
+                inactive_workspace #455057 #455057 #c7c7c7
+                urgent_workspace #ae4544 #ae4544 #ffffff
+        }
 }
 
 # Some changes in color
-#client.focused #8abeb7 #373b41 #cccccc #2e9ef4
+client.focused #8abeb7 #373b41 #cccccc #2e9ef4
+client.focused #586e75 #586e75 #f9f9f9 #268bd2
+client.focused_inactive #455057 #455057 #c7c7c7 #002b36
+client.unfocused #2d2d2d #2d2d2d #c7c7c7 #002b36
+client.urgent #dc322f #dc322f #f9f9f9 #dc322f
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
