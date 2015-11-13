@@ -15,4 +15,4 @@ source vimperator/setup.sh
 # i3
 source i3/setup.sh
 
-ln -s ~/.soedy/Xdefaults ~/.Xdefaults
+ln -s ~/.soedy/Xresources ~/.Xresources
