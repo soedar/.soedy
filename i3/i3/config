@@ -207,12 +207,18 @@ for_window [class="Pavucontrol"] floating enable, border normal
 for_window [class="Steam"] floating enable, border normal
 for_window [class="Arandr"] floating enable, border normal
 for_window [class="Pgadmin3"] floating enable, border normal
+for_window [class="Wicd"] floating enable, border normal
 
-exec --no-startup-id xfce4-volumed
-exec --no-startup-id xfce4-power-manager
 exec --no-startup-id nm-applet
 exec --no-startup-id syndaemon -i 1.0 -K -R -t -d
 exec --no-startup-id light-locker --lock-on-suspend
 
 exec --no-startup-id feh --bg-tile ~/.soedy/wallpaper/debut_dark.png
 exec --no-startup-id xcalib ~/.soedy/misc/l450/ICC_Lenovo_Thinkpad_L450_1920x1080_non_glossy_Lenovo_LP140WF3_SPL1.icm
+
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle 
+bindsym XF86AudioMicMute exec pactl set-source-mute 2 toggle 
