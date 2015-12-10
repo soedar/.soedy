@@ -1,3 +1,4 @@
+syntax on
 set history=100
 
 " Tabs
