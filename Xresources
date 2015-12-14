@@ -1,5 +1,6 @@
-URxvt*font:xft:Dejavu Sans Mono for Powerline:pixelsize=14:style=regular
-URxvt*boldFont:xft:Dejavu Sans Mono for Powerline:pixelsize=14:style=bold
+URxvt*font:xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=regular
+URxvt*boldFont:xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=bold
+
 URxvt.scrollBar: false
 URxvt.saveLines: 30000
 
@@ -72,9 +73,9 @@ rofi.hlfg:                           #101112
 rofi.hlbg:                           #80A5A6
 ! Border color
 rofi.bc:                             #455057
-! Do a more fuzzy matching
+!! Do a more fuzzy matching
 rofi.fuzzy:                          true
-! Use glob matching
+!! Use glob matching
 rofi.glob:                           true
-! Tokenize input string
+!! Tokenize input string
 rofi.tokenize:                       true
