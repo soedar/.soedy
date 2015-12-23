@@ -6,5 +6,5 @@ ln -s ~/.soedy/i3/i3status ~/.config
 ln -s ~/.soedy/i3/dunst ~/.config
 ln -s ~/.soedy/i3/i3blocks ~/.config
 
-sudo ln -s ~/.soedy/i3/xcwd /usr/bin
-
+sudo ln -s ~/.soedy/i3/xcwd /usr/local/bin
+sudo ln -s ~/.soedy/i3/lock /usr/local/bin

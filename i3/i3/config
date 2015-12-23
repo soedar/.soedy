@@ -203,6 +203,7 @@ client.urgent #dc322f #dc322f #f9f9f9 #dc322f
 #######################################################################
 
 assign [class="Slack"] 1
+assign [class="Steam"] 9
 
 for_window [class="Pavucontrol"] floating enable, border normal
 for_window [class="Steam"] floating enable, border normal
@@ -210,9 +211,9 @@ for_window [class="Arandr"] floating enable, border normal
 for_window [class="Pgadmin3"] floating enable, border normal
 for_window [class="Wicd"] floating enable, border normal
 
-#exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet
 exec --no-startup-id syndaemon -i 1.0 -K -R -t -d
-#exec --no-startup-id xss-lock --ignore-sleep -- i3lock -p -n
+exec --no-startup-id xss-lock -l -- /usr/local/bin/lock
 
 exec --no-startup-id feh --bg-tile ~/.soedy/wallpaper/debut_dark.png
 exec --no-startup-id xcalib ~/.soedy/misc/l450/ICC_Lenovo_Thinkpad_L450_1920x1080_non_glossy_Lenovo_LP140WF3_SPL1.icm
