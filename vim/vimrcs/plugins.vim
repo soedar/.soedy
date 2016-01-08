@@ -12,11 +12,6 @@ nnoremap <leader>, :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 "nnoremap <leader>pm :CtrlPMRU<CR>
 
-" Fugitive
-nnoremap <leader>g :Git 
-nnoremap <leader>gst :Gstatus<CR>
-nnoremap <leader>gc :Gcommit<CR>
-
 " Silversearcher
 nnoremap <leader>f :Ag 
 
