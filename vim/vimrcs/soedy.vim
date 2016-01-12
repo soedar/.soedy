@@ -90,8 +90,8 @@ nnoremap <leader>[ <C-T>
 highlight ColorColumn ctermbg=94
 set colorcolumn=80
 
-" Share clipboard with OSX
-set clipboard=unnamed
+" Share clipboard with Linux
+set clipboard=unnamedplus
 
 " Buffers
 set hidden

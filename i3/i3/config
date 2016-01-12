@@ -204,6 +204,8 @@ client.urgent #dc322f #dc322f #f9f9f9 #dc322f
 
 assign [class="Slack"] 1
 assign [class="Telegram"] 1
+assign [class="Messenger"] 1
+assign [class="Thunderbird"] 1
 assign [class="Steam"] 9
 
 for_window [class="Pavucontrol"] floating enable, border normal
