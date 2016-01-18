@@ -206,6 +206,7 @@ assign [class="Slack"] 1
 assign [class="Telegram"] 1
 assign [class="Messenger"] 1
 assign [class="Thunderbird"] 1
+assign [class="Vncviewer"] 8
 assign [class="Steam"] 9
 
 for_window [class="Pavucontrol"] floating enable, border normal
