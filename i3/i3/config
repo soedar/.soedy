@@ -215,6 +215,7 @@ for_window [class="Arandr"] floating enable, border normal
 for_window [class="Pgadmin3"] floating enable, border normal
 for_window [class="Wicd"] floating enable, border normal
 for_window [class="Blueman-manager"] floating enable, border normal
+for_window [class="keepassx"] floating enable, border normal
 
 exec --no-startup-id nm-applet
 exec --no-startup-id syndaemon -i 1.0 -K -R -t -d

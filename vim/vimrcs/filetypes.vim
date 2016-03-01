@@ -23,3 +23,8 @@ au FileType scss setl sw=2 sts=2
 " => YAML section
 """""""""""""""""""""""""""""""
 au BufNewFile,BufRead *.yml set sw=2 sts=2
+
+""""""""""""""""""""""""""""""
+" => slim section
+"""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.slim set sw=2 sts=2
