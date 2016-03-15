@@ -1,3 +1,5 @@
+filetype plugin on
+
 syntax on
 set history=100
 
@@ -22,6 +24,7 @@ highlight NonText ctermbg=none
 
 let mapleader=","
 set number
+set relativenumber
 set cursorline
 
 set wildmenu
@@ -47,7 +50,7 @@ set hlsearch
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Clear highlight
@@ -86,10 +89,6 @@ nnoremap <leader>q :q<cr>
 nnoremap <leader>] <C-]>
 nnoremap <leader>[ <C-T>
 
-" Vertical Line at 80
-highlight ColorColumn ctermbg=94
-set colorcolumn=80
-
 " Share clipboard with Linux
 set clipboard=unnamedplus
 
@@ -100,3 +99,14 @@ set hidden
 set nobackup
 set noswapfile
 set nowritebackup
+
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+
+autocmd BufWrite * :call DeleteTrailingWS()
+
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
