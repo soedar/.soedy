@@ -1,3 +1,5 @@
+URxvt*termName: xterm-256color
+
 URxvt*font:xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=regular
 URxvt*boldFont:xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=bold
 
