@@ -175,7 +175,7 @@ bar {
         separator_symbol "〉"
 
         colors {
-                separator #586e75 
+                separator #586e75
                 background #2d2d2d
                 statusline #c7c7c7
                 focused_workspace  #586e75 #586e75 #ffffff
@@ -224,10 +224,12 @@ exec --no-startup-id xss-lock -l -- /usr/local/bin/lock
 exec --no-startup-id feh --bg-tile ~/.soedy/wallpaper/debut_dark.png
 exec --no-startup-id xcalib ~/.soedy/misc/l450/ICC_Lenovo_Thinkpad_L450_1920x1080_non_glossy_Lenovo_LP140WF3_SPL1.icm
 
+exec --no-startup-id redshift-gtk
+
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5% && killall -USR1 i3status
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5% && killall -USR1 i3status
 
 bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle && killall -USR1 i3status
-bindsym XF86AudioMicMute exec pactl set-source-mute 2 toggle 
+bindsym XF86AudioMicMute exec pactl set-source-mute 2 toggle
