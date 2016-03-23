@@ -16,3 +16,4 @@ source vimperator/setup.sh
 source i3/setup.sh
 
 ln -s ~/.soedy/Xresources ~/.Xresources
+ln -s ~/.soedy/urxvt ~/.urxvt

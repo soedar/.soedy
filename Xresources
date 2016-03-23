@@ -9,6 +9,11 @@ URxvt.saveLines: 30000
 URxvt.keysym.Control-Shft-k: command:\033]720;1\007
 URxvt.keysym.Control-Shift-j: command:\033]721;1\007
 
+URxvt.perl-ext-common: default,resize-font,matcher
+
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
 !TomorrowNightEighties
 *.foreground:   #cccccc
 *.background:   #2d2d2d
