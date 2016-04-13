@@ -202,6 +202,19 @@ client.urgent #dc322f #dc322f #f9f9f9 #dc322f
 # Please remove the following exec line:
 #######################################################################
 
+set $mode_display Ext Screen (s) Single, (p) Projector, (d) Desk
+mode "$mode_display" {
+    bindsym p exec --no-startup-id ~/.screenlayout/projector.sh, mode "default"
+    bindsym d exec --no-startup-id ~/.screenlayout/desk.sh, mode "default"
+    bindsym s exec --no-startup-id ~/.screenlayout/single.sh, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+# Declare here the shortcut to bring the display selection menu
+bindsym $mod+x mode "$mode_display"
+
 assign [class="Slack"] 1
 assign [class="Telegram"] 1
 assign [class="Messenger"] 1

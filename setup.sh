@@ -17,3 +17,4 @@ source i3/setup.sh
 
 ln -s ~/.soedy/Xresources ~/.Xresources
 ln -s ~/.soedy/urxvt ~/.urxvt
+ln -s ~/.soedy/screenlayout ~/.screenlayout
