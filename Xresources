@@ -13,6 +13,9 @@ URxvt.perl-ext-common: default,resize-font,matcher
 
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
+URxvt.lineSpace: 1
+
+Xcursor.size: 16
 
 !TomorrowNightEighties
 *.foreground:   #cccccc
@@ -82,7 +85,5 @@ rofi.hlbg:                           #80A5A6
 rofi.bc:                             #455057
 !! Do a more fuzzy matching
 rofi.fuzzy:                          true
-!! Use glob matching
-rofi.glob:                           true
 !! Tokenize input string
-rofi.tokenize:                       true
+!rofi.tokenize:                       true
