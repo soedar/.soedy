@@ -8,3 +8,4 @@ ln -s ~/.soedy/i3/i3blocks ~/.config
 
 sudo ln -s ~/.soedy/i3/xcwd /usr/local/bin
 sudo ln -s ~/.soedy/i3/lock /usr/local/bin
+sudo ln -s ~/.soedy/i3/disable-standby-fs /usr/local/bin
