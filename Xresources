@@ -86,4 +86,6 @@ rofi.bc:                             #455057
 !! Do a more fuzzy matching
 rofi.fuzzy:                          true
 !! Tokenize input string
-!rofi.tokenize:                       true
+rofi.tokenize:                       true
+! Use levenshtein sorting
+rofi.levenshtein-sort:               true

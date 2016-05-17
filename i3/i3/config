@@ -231,6 +231,7 @@ exec --no-startup-id xss-lock -l -- /usr/local/bin/lock
 
 exec --no-startup-id feh --bg-tile ~/.soedy/wallpaper/debut_dark.png
 exec --no-startup-id xcalib ~/.soedy/misc/l450/ICC_Lenovo_Thinkpad_L450_1920x1080_non_glossy_Lenovo_LP140WF3_SPL1.icm
+exec --no-startup-id redshift-gtk -m randr:preserve=1
 
 exec --no-startup-id fcitx
 exec --no-startup-id udiskie
