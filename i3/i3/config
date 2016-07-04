@@ -233,9 +233,17 @@ exec --no-startup-id feh --bg-tile ~/.soedy/wallpaper/debut_dark.png
 exec --no-startup-id xcalib ~/.soedy/misc/l450/ICC_Lenovo_Thinkpad_L450_1920x1080_non_glossy_Lenovo_LP140WF3_SPL1.icm
 exec --no-startup-id redshift-gtk -m randr:preserve=1
 
+# Language support
 exec --no-startup-id fcitx
+
+# Automount usb
 exec --no-startup-id udiskie
+
+# Script to prevent i3 from stand by when there is full screen
 exec --no-startup-id disable-standby-fs &
+
+# Compton hopefully to reduce screen tearing
+exec --no-startup-id compton -b --backend glx --vsync opengl
 
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
