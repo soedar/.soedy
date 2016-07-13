@@ -1,10 +1,14 @@
-URxvt*termName: xterm-256color
+URxvt.termName: xterm-256color
 
-URxvt*font:xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=regular
-URxvt*boldFont:xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=bold
+URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=regular
+URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=bold
 
 URxvt.scrollBar: false
 URxvt.saveLines: 30000
+
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
 
 URxvt.keysym.Control-Shft-k: command:\033]720;1\007
 URxvt.keysym.Control-Shift-j: command:\033]721;1\007
