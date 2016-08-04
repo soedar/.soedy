@@ -13,7 +13,7 @@ URxvt.scrollTtyKeypress: true
 URxvt.keysym.Control-Shft-k: command:\033]720;1\007
 URxvt.keysym.Control-Shift-j: command:\033]721;1\007
 
-URxvt.perl-ext-common: default,resize-font,matcher
+URxvt.perl-ext-common: default,resize-font,matcher,selection-to-clipboard
 
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
