@@ -111,3 +111,7 @@ autocmd BufWrite * :call DeleteTrailingWS()
 
 autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber
+
+set nocursorcolumn
+syntax sync minlines=256
+set re=1

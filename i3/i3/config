@@ -237,7 +237,7 @@ exec --no-startup-id redshift-gtk -m randr:preserve=1
 exec --no-startup-id fcitx
 
 # Automount usb
-exec --no-startup-id udiskie
+exec --no-startup-id udiskie --smart-tray
 
 # Script to prevent i3 from stand by when there is full screen
 exec --no-startup-id disable-standby-fs &
