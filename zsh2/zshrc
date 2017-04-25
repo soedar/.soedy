@@ -3,12 +3,12 @@
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=20000
-setopt appendhistory autocd extendedglob
+setopt appendhistory sharehistory incappendhistory autocd extendedglob
 unsetopt beep nomatch
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '~/.zshrc'
+zstyle :compinstall filename '/home/soedar/.zshrc'
 
 autoload -Uz compinit
 compinit
