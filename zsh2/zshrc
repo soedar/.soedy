@@ -1,0 +1,70 @@
+# Lines configured by zsh-newuser-install
+
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=20000
+setopt appendhistory autocd extendedglob
+unsetopt beep nomatch
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '~/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+## completion style
+bindkey '^[[Z' reverse-menu-complete
+zstyle ':completion:*' menu select
+
+## Aliases
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias g='git'
+alias gco='git checkout'
+alias ga='git add'
+alias gc='git commit -v'
+alias gst='git status'
+alias gs='git stash'
+alias gl='git log --graph'
+
+## zplug init
+source ~/.zplug/init.zsh
+
+## Histry Substring Search options
+zplug "zsh-users/zsh-history-substring-search"
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
+setopt HIST_IGNORE_ALL_DUPS
+
+## Syntax highlighting
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+
+## zsh completions
+zplug "zsh-users/zsh-completions"
+
+# theme
+zplug "mafredri/zsh-async"
+zplug "sindresorhus/pure", use:"pure.zsh", from:github, as:theme
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+#zplug load --verbose
+zplug load
