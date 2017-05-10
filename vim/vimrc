@@ -1,10 +1,15 @@
 set runtimepath+=~/.vim
 
-" Load Pathogens
-execute pathogen#infect()
-execute pathogen#helptags()
+call plug#begin('~/.vim_plugged')
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'fatih/vim-go'
+Plug 'sheerun/vim-polyglot'
+call plug#end()
 
 " source ~/.vim/vimrcs/basic.vim
 source ~/.vim/vimrcs/soedy.vim
-source ~/.vim/vimrcs/filetypes.vim
 source ~/.vim/vimrcs/plugins.vim
+source ~/.vim/vimrcs/filetypes.vim
