@@ -68,3 +68,23 @@ fi
 # Then, source plugins and add commands to $PATH
 #zplug load --verbose
 zplug load
+
+# Load additional path variables
+
+if [ -f "/usr/local/go/bin/go" ]; then
+    GOPATH=$HOME/go
+    PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+fi
+
+if [ -f "$HOME/.rbenv/bin/rbenv" ]; then
+    export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
+
+if [ $commands[direnv] ]; then
+    eval "$(direnv hook zsh)"
+fi
+
+if [ $commands[kubectl] ]; then
+    source <(kubectl completion zsh)
+fi
