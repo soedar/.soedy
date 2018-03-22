@@ -28,3 +28,8 @@ au BufNewFile,BufRead *.yml set sw=2 sts=2
 " => slim section
 """""""""""""""""""""""""""""""
 au BufNewFile,BufRead *.slim set sw=2 sts=2
+
+""""""""""""""""""""""""""""""
+" => Vue section
+"""""""""""""""""""""""""""""""
+au FileType vue setl sw=2 sts=2
