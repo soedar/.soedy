@@ -59,34 +59,8 @@ Xcursor.size: 16
 *.color15:      #393939
 
 rofi.font: Titillium Web 10
-! Foreground color
-rofi.fg:                             #c7c7c7
-! Background color
-rofi.bg:                             #2D2D2D
-! Foreground color for active row
-rofi.fg-active:                      #268BD2
-! Foreground color for urgent row
-rofi.fg-urgent:                      #DC322F
-! Foreground color for highlighted active row
-rofi.hlfg-active:                    #FDF6E3
-! Foreground color for highlighted urgent row
-rofi.hlfg-urgent:                    #FDF6E3
-! Background color for active row
-rofi.bg-active:                      #FDF6E3
-! Background color for urgent row
-rofi.bg-urgent:                      #FDF6E3
-! Background color for highlighted active row
-rofi.hlbg-active:                    #586E75
-! Background color for highlighted urgent row
-rofi.hlbg-urgent:                    #DC322F
-! Background color for alternating row
-rofi.bgalt:                          #333333
-! Foreground color for highlighted row
-rofi.hlfg:                           #101112
-! Background color for highlighted row
-rofi.hlbg:                           #80A5A6
-! Border color
-rofi.bc:                             #455057
+rofi.theme: glue_pro_blue
+
 !! Do a more fuzzy matching
 rofi.fuzzy:                          true
 !! Tokenize input string
