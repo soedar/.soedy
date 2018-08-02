@@ -39,38 +39,20 @@ alias gl='git log --graph'
 
 alias k='kubectl "--context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}" ${KUBECTL_NAMESPACE/[[:alnum:]-]*/--namespace=${KUBECTL_NAMESPACE}}'
 
-## zplug init
-source ~/.zplug/init.zsh
+source .soedy/zsh/antigen.zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-completions
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+antigen apply
 
-## Histry Substring Search options
-zplug "zsh-users/zsh-history-substring-search"
+# zsh history substring search settings
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
 setopt HIST_IGNORE_ALL_DUPS
-
-## Syntax highlighting
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-
-## zsh completions
-zplug "zsh-users/zsh-completions"
-
-# theme
-zplug "mafredri/zsh-async"
-zplug "sindresorhus/pure", use:"pure.zsh", from:github, as:theme
-
-# Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
-
-# Then, source plugins and add commands to $PATH
-#zplug load --verbose
-zplug load
 
 # Load additional path variables
 
