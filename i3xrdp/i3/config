@@ -15,7 +15,7 @@
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Titillium Web, FontAwesome 10
+font pango:Roboto Mono for Powerline, FontAwesome 10
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -37,8 +37,11 @@ set $right l
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt -cd "`xcwd`"
-bindsym $mod+Shift+Return exec urxvt
+#bindsym $mod+Return exec urxvt -cd "`xcwd`"
+#bindsym $mod+Shift+Return exec urxvt
+
+bindsym $mod+Return exec x-terminal-emulator
+bindsym $mod+Shift+Return exec x-terminal-emulator
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -180,8 +183,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        #status_command i3status
-	status_command i3blocks
+        status_command i3status
         tray_output rdp0
         position top
         #separator_symbol "〉"

@@ -1,0 +1,3 @@
+rofi.theme: /home/soedar/.local/share/rofi/themes/oxide.rasi
+rofi.tokenize: true
+rofi.levenshtein-sort: true
