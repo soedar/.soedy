@@ -183,7 +183,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3blocks
         tray_output rdp0
         position top
         #separator_symbol "〉"
@@ -217,21 +217,10 @@ client.urgent #dc322f #dc322f #f9f9f9 #dc322f
 # Please remove the following exec line:
 #######################################################################
 
-assign [class="Vncviewer"] 8
-assign [class="Steam"] 9
-
-for_window [class="Pavucontrol"] floating enable, border normal
-for_window [class="Steam"] floating enable, border normal
-for_window [class="Arandr"] floating enable, border normal
-for_window [class="Pgadmin3"] floating enable, border normal
-for_window [class="Blueman-manager"] floating enable, border normal
-for_window [class="Keepassx"] floating enable, border normal
-for_window [class="keepassxc"] floating enable, border normal
-
 exec --no-startup-id feh --bg-tile ~/.soedy/wallpaper/debut_dark.png
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
 # Language support
 #exec --no-startup-id fcitx
 
-new_window pixel 2
+new_window pixel 1

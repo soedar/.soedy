@@ -1,7 +1,7 @@
 URxvt.termName: xterm-256color
 
-URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=regular
-URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=14:style=bold
+URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=14:Regular
+URxvt.boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=14:Bold
 
 URxvt.scrollBar: false
 URxvt.saveLines: 30000
@@ -22,74 +22,38 @@ URxvt.lineSpace: 1
 Xcursor.size: 16
 
 !TomorrowNightEighties
-*.foreground:   #cccccc
-*.background:   #2d2d2d
-*.cursorColor:  #aeafad
+URxvt.foreground:   #cccccc
+URxvt.background:   #2d2d2d
+URxvt.cursorColor:  #aeafad
 
 ! Black / Grey
-*.color0:       #000000
-*.color8:       #666666
+URxvt.color0:       #000000
+URxvt.color8:       #666666
 
 ! Red / Bright Red
-*.color1:       #f2777a
-*.color9:       #f2777a
+URxvt.color1:       #f2777a
+URxvt.color9:       #f2777a
 
 ! Green + Bright Green
-*.color2:       #99cc99
-*.color10:      #9ec400
+URxvt.color2:       #99cc99
+URxvt.color10:      #9ec400
 
 ! Yellow (Orange) + Bright Yellow (Yellow)
-*.color3:       #f99157
-*.color11:      #ffcc66
+URxvt.color3:       #f99157
+URxvt.color11:      #ffcc66
 
 ! Blue + Bright Blue
-*.color4:       #6699cc
-*.color12:      #6688cc
+URxvt.color4:       #6699cc
+URxvt.color12:      #6688cc
 
 ! Magenta (Purple) + Bright Magenta
-*.color5:       #cc99cc
-*.color13:      #b777e0
+URxvt.color5:       #cc99cc
+URxvt.color13:      #b777e0
 
 ! Cyan (Aqua) + Bright Cyan
-*.color6:       #66cccc
-*.color14:      #54ced6
+URxvt.color6:       #66cccc
+URxvt.color14:      #54ced6
 
 ! Light Grey (Selection) + White (Current Line)
-*.color7:       #515151
-*.color15:      #393939
-
-rofi.font: Titillium Web 10
-! Foreground color
-rofi.fg:                             #c7c7c7
-! Background color
-rofi.bg:                             #2D2D2D
-! Foreground color for active row
-rofi.fg-active:                      #268BD2
-! Foreground color for urgent row
-rofi.fg-urgent:                      #DC322F
-! Foreground color for highlighted active row
-rofi.hlfg-active:                    #FDF6E3
-! Foreground color for highlighted urgent row
-rofi.hlfg-urgent:                    #FDF6E3
-! Background color for active row
-rofi.bg-active:                      #FDF6E3
-! Background color for urgent row
-rofi.bg-urgent:                      #FDF6E3
-! Background color for highlighted active row
-rofi.hlbg-active:                    #586E75
-! Background color for highlighted urgent row
-rofi.hlbg-urgent:                    #DC322F
-! Background color for alternating row
-rofi.bgalt:                          #333333
-! Foreground color for highlighted row
-rofi.hlfg:                           #101112
-! Background color for highlighted row
-rofi.hlbg:                           #80A5A6
-! Border color
-rofi.bc:                             #455057
-!! Do a more fuzzy matching
-rofi.fuzzy:                          true
-!! Tokenize input string
-rofi.tokenize:                       true
-! Use levenshtein sorting
-rofi.levenshtein-sort:               true
+URxvt.color7:       #515151
+URxvt.color15:      #393939

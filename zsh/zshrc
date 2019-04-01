@@ -38,3 +38,12 @@ alias gs='git stash'
 alias gl='git log --graph'
 
 alias k='kubectl "--context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}" ${KUBECTL_NAMESPACE/[[:alnum:]-]*/--namespace=${KUBECTL_NAMESPACE}}'
+
+eval "$(direnv hook zsh)"
+
+export PATH=$PATH:/usr/local/go/bin:~/go/bin
+export PATH=$PATH:~/.rbenv/bin:~/.rbenv/plugins/ruby-build/bin
+
+eval "$(rbenv init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

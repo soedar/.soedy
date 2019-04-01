@@ -24,22 +24,9 @@
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-command=/home/soedar/.soedy/i3/i3blocks/$BLOCK_NAME
+command=~/.config/i3blocks/$BLOCK_NAME
 #separator_block_width=13
 markup=none
-
-# Volume indicator
-#
-# The first parameter sets the step (and units to display)
-# The second parameter overrides the mixer selection
-# See the script for details.
-#[volume]
-#label=VOL
-#label=♪
-#instance=Master
-#instance=PCM
-#interval=once
-#signal=10
 
 # Memory usage
 #
@@ -61,6 +48,11 @@ interval=2
 [disk]
 label=ROOT
 instance=/
+interval=2
+
+[disk]
+label=Docker
+instance=/var/lib/docker
 interval=2
 
 # CPU usage
