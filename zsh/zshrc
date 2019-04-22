@@ -8,6 +8,7 @@ unsetopt beep nomatch
 bindkey -e
 
 ## completion style
+autoload -U compinit && compinit
 bindkey '^[[Z' reverse-menu-complete
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
@@ -37,13 +38,26 @@ alias gst='git status'
 alias gs='git stash'
 alias gl='git log --graph'
 
-alias k='kubectl "--context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}" ${KUBECTL_NAMESPACE/[[:alnum:]-]*/--namespace=${KUBECTL_NAMESPACE}}'
+if [ -x "kubectl" ]; then
+    alias k='kubectl "--context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}" ${KUBECTL_NAMESPACE/[[:alnum:]-]*/--namespace=${KUBECTL_NAMESPACE}}'
+fi
 
-eval "$(direnv hook zsh)"
+if [ -x "go" ]; then
+    export PATH=$PATH:/usr/local/go/bin:~/go/bin
+fi
 
-export PATH=$PATH:/usr/local/go/bin:~/go/bin
-export PATH=$PATH:~/.rbenv/bin:~/.rbenv/plugins/ruby-build/bin
+if [ -x "direnv" ]; then
+    eval "$(direnv hook zsh)"
+fi
 
-eval "$(rbenv init -)"
+if [ -x "rbenv" ]; then
+    export PATH=$PATH:~/.rbenv/bin:~/.rbenv/plugins/ruby-build/bin
+
+    eval "$(rbenv init -)"
+fi
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+    source /etc/profile.d/vte.sh
+fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
