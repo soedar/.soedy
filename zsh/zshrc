@@ -42,7 +42,7 @@ if [ -x "kubectl" ]; then
     alias k='kubectl "--context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}" ${KUBECTL_NAMESPACE/[[:alnum:]-]*/--namespace=${KUBECTL_NAMESPACE}}'
 fi
 
-if [ -x "go" ]; then
+if [ -f "/usr/local/go/bin/go" ]; then
     export PATH=$PATH:/usr/local/go/bin:~/go/bin
 fi
 
