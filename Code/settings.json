@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Tomorrow Night Eighties",
+    "window.titleBarStyle": "custom",
+    "editor.wordWrap": "on",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
+}
