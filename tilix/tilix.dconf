@@ -1,0 +1,18 @@
+[/]
+paste-advanced-default=false
+terminal-title-style='none'
+window-style='disable-csd-hide-toolbar'
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+foreground-color='#CCCCCC'
+visible-name='Default'
+palette=['#000000', '#F2777A', '#99CC99', '#FFCC66', '#6699CC', '#CC99CC', '#66CCCC', '#FFFFFF', '#000000', '#F2777A', '#99CC99', '#FFCC66', '#6699CC', '#CC99CC', '#66CCCC', '#FFFFFF']
+badge-color-set=false
+use-system-font=true
+cursor-colors-set=false
+highlight-colors-set=false
+use-theme-colors=true
+bold-color-set=false
+font='Hack 10'
+background-color='#2D2D2D'
+background-transparency-percent=5
