@@ -8,8 +8,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'ajh17/VimCompletesMe'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
