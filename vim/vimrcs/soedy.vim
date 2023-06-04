@@ -91,7 +91,7 @@ nnoremap <leader>] <C-]>
 nnoremap <leader>[ <C-T>
 
 " Share clipboard with Linux
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " Buffers
 set hidden
