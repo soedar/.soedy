@@ -1,5 +1,16 @@
-source ~/.soedy/zsh/plugins.zsh
+## Powerline10k, have to be near the top of the file
+source ~/.soedy/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+## zsh configuration
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=20000
@@ -13,12 +24,6 @@ bindkey '^[[Z' reverse-menu-complete
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-## History
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-bindkey -M emacs '^P' history-substring-search-up
-bindkey -M emacs '^N' history-substring-search-down
-setopt HIST_IGNORE_ALL_DUPS
 
 ## Aliases
 alias ls='ls --color=auto'
@@ -50,10 +55,24 @@ if [ -x "direnv" ]; then
     eval "$(direnv hook zsh)"
 fi
 
-if [ -x "rbenv" ]; then
     export PATH=$PATH:~/.rbenv/bin:~/.rbenv/plugins/ruby-build/bin
 
     eval "$(rbenv init -)"
-fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+gpgconf --launch gpg-agent
+export GPG_TTY=$(tty)
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
+## zsh completion related plugins, have to be at the bottom of the file
+fpath=(~/.soedy/zsh/plugins/zsh-completions/src $fpath)
+source ~/.soedy/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.soedy/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+## History configuration
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
+setopt HIST_IGNORE_ALL_DUPS
