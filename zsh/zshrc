@@ -22,7 +22,7 @@ bindkey -e
 autoload -U compinit && compinit
 bindkey '^[[Z' reverse-menu-complete
 zstyle ':completion:*' menu select
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 
 ## Aliases
