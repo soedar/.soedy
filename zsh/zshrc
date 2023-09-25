@@ -63,10 +63,13 @@ if [ -x "$(command -v gpgconf)" ]; then
     export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 fi
 
+export PATH=$PATH:~/.rd/bin
+
 ## zsh completion related plugins, have to be at the bottom of the file
 fpath=(~/.soedy/zsh/plugins/zsh-completions/src $fpath)
 source ~/.soedy/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.soedy/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 ## History configuration
 bindkey '^[[A' history-substring-search-up
@@ -74,3 +77,4 @@ bindkey '^[[B' history-substring-search-down
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
 setopt HIST_IGNORE_ALL_DUPS
+
