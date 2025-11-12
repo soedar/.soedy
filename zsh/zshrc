@@ -70,7 +70,6 @@ if [ -x "$(command -v mise)" ]; then
 fi
 
 export PATH=$PATH:~/.local/bin
-export PATH=$PATH:~/.rd/bin
 
 ## zsh completion related plugins, have to be at the bottom of the file
 fpath=(~/.soedy/zsh/plugins/zsh-completions/src $fpath)
