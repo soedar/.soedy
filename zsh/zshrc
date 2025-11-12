@@ -42,6 +42,8 @@ alias gc='git commit -v'
 alias gst='git status'
 alias gs='git stash'
 alias gl='git log --graph'
+alias gfa='git fetch --all'
+alias gmnff='git merge --no-ff'
 
 if [ -x "$(command -v kubectl)" ]; then
     alias k='kubectl "--context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}" ${KUBECTL_NAMESPACE/[[:alnum:]-]*/--namespace=${KUBECTL_NAMESPACE}}'
@@ -63,13 +65,17 @@ if [ -x "$(command -v gpgconf)" ]; then
     export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 fi
 
+if [ -x "$(command -v mise)" ]; then
+    eval "$(mise activate zsh)"
+fi
+
+export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.rd/bin
 
 ## zsh completion related plugins, have to be at the bottom of the file
 fpath=(~/.soedy/zsh/plugins/zsh-completions/src $fpath)
 source ~/.soedy/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.soedy/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 ## History configuration
 bindkey '^[[A' history-substring-search-up
@@ -77,4 +83,3 @@ bindkey '^[[B' history-substring-search-down
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
 setopt HIST_IGNORE_ALL_DUPS
-
